@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 56px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.2px;
+}
+
+.task-counter {
+  font-size: 13px;
+  color: var(--text-sub);
+  font-weight: 400;
+}
+
+.task-counter span {
+  font-weight: 600;
+  color: var(--text);
+}

@@ -1,0 +1,119 @@
+.column {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  width: 280px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.column-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.column-count {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-sub);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 1px 8px;
+}
+
+.column-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 8px;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+}
+
+.column-footer {
+  padding: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.add-task-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 8px 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.1s, color 0.1s;
+}
+.add-task-btn:hover {
+  background: var(--bg);
+  color: var(--text-sub);
+}
+
+.add-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.add-task-input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--white);
+  outline: none;
+}
+.add-task-input:focus {
+  border-color: var(--accent);
+}
+.add-task-input::placeholder {
+  color: var(--text-muted);
+}
+
+.add-task-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-confirm {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-confirm:hover { opacity: 0.9; }
+
+.btn-cancel {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--text-sub);
+  cursor: pointer;
+}
+.btn-cancel:hover { background: var(--bg); }
